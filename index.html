@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_2332327_7x11926pewk.css
+"/>
+		<style type="text/css">
+			/* .icon-QQ{
+				color: blue;
+			} */
+			body,html{
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				background-color: #000000;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			
+			}
+			
+			ul{
+				
+				display: flex;
+				text-decoration: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			ul li{
+				margin: 0 20px;
+				list-style: none;
+				position: relative;
+				
+			}
+			/* 图标相当于文字 */
+			ul li .iconfont{
+				font-size: 30px;
+				color: #222;
+			}
+			li::before{
+				font-family: "iconfont";
+				font-size: 30px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 0;
+				/* border-bottom: #000000 solid 2px;没有content所以不显示 */
+			}
+			li:nth-child(1)::before{
+				content: "\e650";
+				border-bottom: solid #2bd7ff 2px;
+				color: #2bd7ff;
+				overflow: hidden;
+				transition: all 0.4s ease-out;
+			}
+			li:nth-child(2)::before{
+				content: "\e653";
+				border-bottom: solid #2aa146 2px;
+				color: #2aa146;
+				overflow: hidden;
+				filter: contrast(15);
+				transition: all 0.4s ease-out;
+			}
+			li:nth-child(3)::before{
+				content: "\e654";
+				border-bottom: solid #ea4335 2px;
+				color: #ea4335;
+				
+				overflow: hidden;
+				transition: all 0.4s ease-out;
+			}
+			li:hover::before{
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="out">
+			<ul>
+				<li><a href="#"><i class="iconfont icon-QQ"></i></a></li>
+				<li><a href="#"><i class="iconfont icon-weixin"></i></a></li>
+				<li><a href="#"><i class="iconfont icon-weibo"></i></a></li>
+			</ul>
+		</div>
+	</body>
+</html>
